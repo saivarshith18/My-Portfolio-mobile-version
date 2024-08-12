@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+html, body {
+    height:100%;
+    width: 100%;
+}
+
+@media (max-width:600px) {
+    #main{
+        overflow-x: hidden;
+    }
+    nav{
+        height:70px;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left:15px;
+        padding-right:20px;
+        z-index: 99;
+    }
+    nav i{
+        font-size:1.7em ;
+    }
+    #sidebar{
+        height: 100vh;
+        width: 70%;
+        position: fixed;
+        background-color: darkgreen;
+        right: 0;
+        z-index: 100;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.459);
+        backdrop-filter: blur(20px);
+        right: -70%;
+    }
+    #sidebar i{
+        margin-left:190px;
+        font-size: 1.7em;
+        
+    }
+    #sidebar h1{
+        color: black;
+        margin-top: 20px;
+        font-size:2em;
+        
+    }
+
+    #page1{
+        height: 100vh;
+        width:100%;
+        background-color: black;
+        overflow: hidden;
+    }
+    #hid{
+        height:60px;
+        width: 100%;
+        background-color: transparent;
+    }
+    #sal{
+        font-size:2em;
+        margin-top:20px;
+        padding-left: 5px;
+    }
+    #name{
+        font-size:1.5em;
+    }
+    #name h1{
+        margin-top: 10px;
+        color: #7C00FE;
+        font-weight: 800;
+    }
+    #name p{
+        font-size:larger;
+        font-weight: bold;
+    }
+    #mypic{
+        position: relative;
+        height: 800px;
+        padding-left: 5px;
+    }
+    #mypic img{
+       position: absolute;
+       top:15%;
+       left:25%;
+       height:68%;
+       width: auto;
+       filter: grayscale(1);
+       
+    }
+    #social{
+        position: absolute;
+        height:17em;
+        width:4em;
+        background-color: blueviolet;
+        top:30%;
+        left: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-evenly;
+    }
+    #social a,#resume a{
+        text-decoration: none;
+    }
+    #social i{
+        font-size: 3em;
+    }
+    #resume{
+        display: flex;
+        margin-top: 20px;
+        margin-left:10px;
+        border: 3px solid #7C00FE;
+        width:120px;
+        padding:6px;
+        border-radius: 10px;
+        justify-content: space-between;
+    }
+    #resume p{
+        font-size: larger;
+        font-weight: 600;
+        color: #7C00FE;
+    }
+    #resume i{
+        color: #7C00FE;
+        font-weight: 600;
+        font-size: larger;
+    }
+    #page2{
+        height:90vh;
+        width: 100%;
+        background-color: black;
+        display: flex;
+    }
+    #title1{
+        height:80vh;
+        width:15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top:10px;
+        margin-top: 20px;
+    }
+    #title1 h1{
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-size:1.6em;
+        font-weight:900;
+    }
+    #container{
+        height:80vh;
+        width:80%;
+        padding-left:10px;
+    }
+    .box{
+        height:200px;
+        width:95%;
+        background-color:#7C00FE;
+        margin:10px;
+        border-radius: 20px;
+        padding:20px;
+        padding-top:30px;
+    }
+    #page3{
+        height:90vh;
+        width: 100%;
+        background-color: black;
+    }
+    .points{
+        font-size:5em;
+        margin-top: 20px;
+        color:black;
+    }
+    #page3 span{
+        font-size:4em;
+        font-weight: 900;
+        opacity: 0;
+    }
+    #title2{
+        text-align: center;
+    }
+    #skill-con{
+        height:75vh;
+        padding-top:3em;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+   .skill img{
+    height:8em;
+    width:8em;
+    border-radius:30px;
+   }
+   #con1,#con2{
+    display: flex;
+    justify-content:space-around;
+   }
+   #page4{
+    height:80vh;
+    width:100%;
+    background-color: black;
+   }
+   #title3{
+    height:5em;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   }
+   #title3 span{
+    font-size:3.8em;
+    font-weight: 900;
+   }
+   #pro-con{
+    height:70vh;
+    width: 100%;
+    display: grid;
+    grid-row: repeat(1fr,5);
+    gap: 10px;
+   }
+   .pro{
+    background-color: #7C00FE;
+    border-radius: 20px;
+    width: 85%;
+    margin-left:5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .pro p{
+    font-size:1.3em;
+    padding:20px;
+    font-weight:900;
+    color: black;
+   }
+   .pro:nth-child(4),.pro:nth-last-child(1){
+    flex-direction: column;
+    padding-bottom:10px;
+   }
+   .pro a{
+    font-weight:800;
+    opacity: 0.7;
+   }
+   #page5{
+    height:80vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:right;
+   }
+   #page5 h1{
+    text-align: center;
+    font-size:3em;
+    font-weight: 900;
+   }
+   #contact-div{
+    height: 50vh;
+    width:80%;
+   }
+   form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 30px;
+   }
+   form label{
+    font-size:1.2em;
+    font-weight: 700;
+    margin: 10px;
+    color:white;
+   }
+   input{
+    height:35px;
+    width:260px;
+    border: none;
+    border-bottom: 5px solid #7C00FE;
+    color:black;
+    padding-left:7px;
+
+   }
+   textarea{
+    width: 260px;
+    color: black;
+    border-bottom: 5px solid #7C00FE;
+   }
+   form button{
+    height:50px;
+    margin-left:120px;
+    width:150px;
+    color: white;
+    background-color: #7C00FE;
+    border: none;
+    font-weight: 800;
+   }
+   input:focus{
+    border-bottom: #7C00FE 5px solid;
+   }
+   footer{
+    height: 20vh;
+    width: 100%;
+    background-color: #7C00FE;
+    display: flex;
+    font-size:13px;
+    font-weight:500;
+    padding-top: 30px;
+    justify-content: center;
+   }
+   footer i{
+    margin-right:3px;
+   }
+}
